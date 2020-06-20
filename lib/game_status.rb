@@ -40,6 +40,7 @@ def over?(board)
      return true
    end
 end
+
 def winner(board)
   index = []
   index = won?(board)
