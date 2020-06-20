@@ -14,14 +14,13 @@ def won?(board)
    position_1 = board[win_index_1] # value of board at win_index_1
    position_2 = board[win_index_2] # value of board at win_index_2
    position_3 = board[win_index_3] # value of board at win_index_3
-   if board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-     false
-   elsif position_1 == position_2 && position_2 == position_3 && position_taken?(board, win_index_1)
-       return win_combination
-   else
-     false
-   end
- end
+   if position_1 == "X" && position_2 == "X" && position_3 == "X"
+      return win_combination
+    elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
+      return win_combination
+    end
+  end
+  return false
 end
 
 def full?(board)
