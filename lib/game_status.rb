@@ -17,7 +17,7 @@ def won?(board)
    if position_1 == position_2 && position_2 == position_3 && position_taken?(board, win_index_1)
      return win_combination
    elsif board.all {|e| e == " "}
-     false     
+     false
    else
      false
    end
